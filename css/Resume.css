@@ -244,7 +244,7 @@ button{
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    background-image: url(/SVG/bg_forest.svg);
+    background-image: url(/svg/bg_forest.svg);
     background-size: auto 30%;
     background-position: 0 105%;
     background-repeat: repeat-x;
@@ -2093,7 +2093,7 @@ button{
     grid-row: 1 / 10;
     width: 100%;
     height: 100%;
-    background-image: url(/SVG/bg_tree.svg);
+    background-image: url(/svg/bg_tree.svg);
     background-repeat: no-repeat;
     background-position: 50% 100%;
 }
@@ -2944,7 +2944,7 @@ button{
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(/SVG/bg_cabin.svg);
+    background-image: url(/svg/bg_cabin.svg);
     background-size: 15%;
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -2955,7 +2955,7 @@ button{
     right: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url(/SVG/bg_mountain.svg);
+    background-image: url(/svg/bg_mountain.svg);
     background-size: 35% auto;
     background-repeat: no-repeat;
     background-position: center right;
