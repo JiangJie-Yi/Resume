@@ -1,0 +1,692 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/scss/Resume.css">
+    <link rel="stylesheet" href="./css/scss/rwd.css">
+    <title>Je - Resume</title>
+  </head>
+  <body>
+    <button class="toggle_theme_btn lockObject" onclick="toggleTheme()" disabled>Toggle Theme</button>
+    <div class="box">
+      <div class="curriculum_vitae">
+        <div class="directory">
+          <svg id="triangleA" class="iconTriangle" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <linearGradient id="triangleAlinearGradient" gradientUnits="userSpaceOnUse" x1="1" y1="7.9861" x2="15" y2="7.9861">
+              <stop offset="0" style="stop-color:#00E7FF"/>
+              <stop offset="1" style="stop-color:#1DA8B7"/>
+            </linearGradient>
+            <path class="iconTrianglePath-1" d="M14.4,6.9L2.8,0.2C2.2-0.1,1.5,0.1,1.2,0.7C1.1,0.9,1,1.1,1,1.3v13.4c0,0.7,0.5,1.2,1.2,1.2 c0.2,0,0.4-0.1,0.6-0.2L14.4,9C15,8.7,15.2,8,14.8,7.4C14.7,7.2,14.6,7,14.4,6.9z"/>
+          </svg>
+          <button class="autobiography_button focusMenuButton">
+            <div class="autobiography_ch_title_wrap">
+              <p class="autobiography_ch_title">簡</p>
+              <p class="autobiography_ch_title">介</p>
+            </div>
+            <p class="autobiography_en_title">Introduction</p>
+          </button>
+          <button class="expertise_button">
+            <div class="expertise_ch_title_wrap">
+              <p class="expertise_ch_title">技</p>
+              <p class="expertise_ch_title">能</p>
+            </div>
+            <p class="expertise_en_title">Expertise Skill</p>
+          </button>
+          <button class="creation_button">
+            <div class="creation_ch_title_wrap">
+              <p class="creation_ch_title">作</p>
+              <p class="creation_ch_title">品</p>
+            </div>
+            <p class="creation_en_title">Creation</p>
+          </button>
+          <button class="life_button">
+            <div class="life_ch_title_wrap">
+              <p class="life_ch_title">生</p>
+              <p class="life_ch_title">活</p>
+            </div>
+            <p class="life_en_title">Life</p>
+          </button>
+        </div>
+        <div class="page-1">
+          <div class="avatar_wrap">
+            <!-- <img class="avatar" src="https://imgur.com/smpRQ1O.jpg" alt=""> -->
+            <img class="avatar" src="./image/personal_photo.png" alt="">
+          </div>
+          <div class="information_box">
+            <div class="bg_snow_information">
+              <img class="snow-1" src="./image/sonw1-82x38.png"/>
+              <div class="snow-2_wrap">
+                <img class="snow-2" src="./image/sonw2-104x38.png"/>
+                <img class="branches-1" src="./image/branches1-42x32.png"/>
+              </div>
+            </div>
+            <div class="name_wrap">
+              <div class="id">
+                <svg class="icon_taurus" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <circle class="icon_taurus_circle-1" cx="12" cy="14.3" r="6.9"/>
+                  <path class="icon_taurus_path-1" d="M18.5,2.8C17.6,5.5,15,7.4,12,7.4c-3,0-5.6-1.9-6.5-4.6"/>
+                </svg>
+                <p class="name_en">Jiang Jie-Yi</p>
+              </div>
+              <div class="insight" title="Specialty">
+                <svg class="icon_insight" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 36 36" style="enable-background:new 0 0 36 36;" xml:space="preserve">
+                    <path class="icon_insight_line_path-1" d="M22.1,22c0,2.2-1.8,4.1-4.1,4.1s-4.1-1.8-4.1-4.1s1.8-4.1,4.1-4.1S22.1,19.8,22.1,22z"/>
+                    <path class="icon_insight_line_path-2" d="M5,22c0,0,4.9-8.9,13-8.9S31,22,31,22s-4.9,8.9-13,8.9S5,22,5,22z M18,27.7c3.1,0,5.7-2.5,5.7-5.7s-2.5-5.7-5.7-5.7
+                      s-5.7,2.5-5.7,5.7S14.9,27.7,18,27.7z"/>
+                  <g class="icon_insight_line_wrap">
+                    <line class="icon_insight_line-1" x1="18" y1="6.4" x2="18" y2="9.3"/>
+                    <line class="icon_insight_line-2" x1="7.2" y1="9.8" x2="8.9" y2="11.5"/>
+                    <line class="icon_insight_line-3" x1="28.8" y1="9.8" x2="27.1" y2="11.5"/>
+                  </g>
+                </svg>
+                <p class="txt_insight">Insight</p>
+              </div>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="company_wrap">
+              <div class="company_row_line"></div>
+              <div class="arrow ar-1"></div>
+              <div class="company_colum_line cl-1"></div>
+              <div class="arrow ar-2"></div>
+              <div class="company_colum_line cl-2"></div>
+              <div class="company-1">
+                <div class="company_date-1_ct">
+                  <p class="date">2019/09 - 至今</p>
+                  <p class="accumulation">4年6個月 前端工程師</p>
+                  <svg class="icon_pos_at_present com-1" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path class="icon_pos_at_present_path" d="M18.5,7.5c0,5.6-6.5,14.8-6.5,14.8S5.5,13.1,5.5,7.5c0-3.4,2.9-6.2,6.5-6.2S18.5,4.1,18.5,7.5z"/>
+                    <circle class="icon_pos_at_present_circle" cx="12" cy="7.8" r="2.5"/>
+                  </svg>
+                  <div class="company_logo-1_wrap">
+                    <a href="https://www.neithnet.com/zh/" target="_blank">
+                      <div class="company_logo-1_triangle"></div>
+                      <img class="company_logo-1" src="./image/company_neithnet.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="project_course">
+                  <p class="project_course_title">專案經歷</P>
+                  <div class="project_course_ct">
+                    <p>1、NEITHInsight <span>( 情資監控系統 )</span>－Web</p>
+                    <p>2、So-net <span>( 憑證購買系統 )</span>－Web</p>
+                    <p>3、SSL Certificate Reseller <span>( 憑證購買系統 )</span>－Web</p>
+                    <p>4、艾捷科技 <span>( 憑證購買系統 )</span>－Web</p>
+                    <p>5、NEITHAlert <span>( 雲端告警 後台管理系統 )</span>－Web</p>
+                    <p>6、NEITHAlert <span>( 雲端告警系統 App )</span>－Android</p>
+                    <p>7、NEITHNet Blog <span>( 官網部落格 )</span>－Web</p>
+                    <p>8、NEITHDNS <span>( 網域名稱系統 )</span>－Web</p>
+                    <p>9、Booster <span>( VPN App )</span>－Android</p>
+                    <p>10、NEITHLink <span>( VPN App )</span>－Android</p>
+                    <p>11、NEITHLink <span>( VPN 後台管理系統 )</span>－Web</p>
+                  </div>
+                </div>
+              </div>
+              <div class="company-2">
+                <div class="company_date-2_ct">
+                  <p class="date">2017/07 - 2019/09</p>
+                  <p class="accumulation">2年3個月 前端工程師</p>
+                  <svg class="icon_pos com-2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path class="icon_pos_path" d="M18.5,7.5c0,5.6-6.5,14.8-6.5,14.8S5.5,13.1,5.5,7.5c0-3.4,2.9-6.2,6.5-6.2S18.5,4.1,18.5,7.5z"/>
+                    <circle class="icon_pos_circle" cx="12" cy="7.8" r="2.5"/>
+                  </svg>
+                  <div class="company_logo-2_wrap">
+                    <a href="https://cycareers.com.tw/" target="_blank">
+                      <div class="company_logo-2_triangle"></div>
+                      <img class="company_logo-2" src="./image/company_chungyo.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="project_course">
+                  <p class="project_course_title">專案經歷</P>
+                  <div class="project_course_ct">
+                    <p>1、PMIS <span>( 專案管理系統 )</span>－Web</p>
+                    <p>2、Hackinfo <span>( 駭客平台 )</span>－Web</p>
+                    <p>3、Reseller <span>( 憑證購買系統 )</span>－Web</p>
+                  </div>
+                </div>
+              </div>
+              <div class="company-3">
+                <div class="company_date-3_ct">
+                  <p class="date">2016/05 - 2017/06</p>
+                  <p class="accumulation">1年2個月 2D美術</p>
+                  <svg class="icon_pos com-3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path class="icon_pos_path" d="M18.5,7.5c0,5.6-6.5,14.8-6.5,14.8S5.5,13.1,5.5,7.5c0-3.4,2.9-6.2,6.5-6.2S18.5,4.1,18.5,7.5z"/>
+                    <circle class="icon_pos_circle" cx="12" cy="7.8" r="2.5"/>
+                  </svg>
+                  <div class="company_logo-3_wrap">
+                    <a href="https://www.wanin.tw/" target="_blank">
+                      <div class="company_logo-3_triangle"></div>
+                      <div class="company_logo-3_img_wrap">
+                        <img class="company_logo-3" src="./image/company_wanin.png">
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="project_course">
+                  <p class="project_course_title">專案經歷</P>
+                  <div class="project_course_ct">
+                    <p>1、大亨富豪</P>
+                    <p>－角色、場景、介面、Icon、Button、企劃</P>
+                    <p>2、星城Online</P>
+                    <p>－遊戲大廳美術介面</P>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg_snow_autobiography">
+            <img class="snow-3" src="./image/sonw3-82x38.png">
+            <img class="snow-4" src="./image/sonw4-360x36.png">
+          </div>
+          <div class="autobiography_text_wrap">
+            <div class="information">
+              <div class="information_ct">
+                <p class="real_age_title" title="Real Age">Real Age</p>
+                <p class="nominal_age_title" title="Nominal Age">Nominal Age</p>
+                <div class="year_old">
+                  <div class="year_old_33_34">
+                    <p class="real_age real_age_font" title="Real Age">34</p>
+                    <p class="nominal_age nominal_age_font" title="Nominal Age">33</p>
+                  </div>
+                </div>
+                <!-- <div class="divider"></div> -->
+                <svg class="icon_educational_qualifications" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_educational_qualifications_path-1" d="M1.5,8.9L12,6.5l10.5,2.5L12,11.4L1.5,8.9z"/>
+                  <path class="icon_educational_qualifications_path-2" d="M6.5,10.4v5c0,0,2.5,1.5,5.5,1.5s5.5-1.5,5.5-1.5v-5"/>
+                  <path class="icon_educational_qualifications_path-3" d="M3,9.4v9.8"/>
+                </svg>
+                <P class="educational_qualifications_txt">遠東科技大學-數位媒體設計與管理</P>
+                <svg class="icon_profession" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_profession_path-1" d="M19.2,12.6H4.8c-1.1,0-2-0.9-2-2V8c0-0.9,0.7-1.7,1.7-1.7h15.2c0.9,0,1.7,0.7,1.7,1.7v2.6 C21.2,11.7,20.3,12.6,19.2,12.6z"/>
+                  <path class="icon_profession_path-2" d="M20.7,12v6.3c0,0.8-0.7,1.5-1.6,1.5H4.9c-0.9,0-1.6-0.7-1.6-1.5V12"/>
+                  <path class="icon_profession_path-3" d="M7.9,6.3V4.9c0-0.6,0.4-1,1-1h6.5c0.6,0,1,0.4,1,1v1.4"/>
+                  <path class="icon_profession_path-4" d="M9.1,14.3v-1.9c0-0.4-0.3-0.7-0.8-0.7H7.4c-0.4,0-0.8,0.3-0.8,0.7v1.9C6.6,14.7,7,15,7.4,15h0.9 C8.7,15,9.1,14.7,9.1,14.3z"/>
+                  <path class="icon_profession_path-5" d="M17.6,14.3v-1.9c0-0.4-0.3-0.7-0.8-0.7h-0.9c-0.4,0-0.8,0.3-0.8,0.7v1.9c0,0.4,0.3,0.7,0.8,0.7h0.9 C17.2,15,17.6,14.7,17.6,14.3z"/>
+                </svg>
+                <p class="profession_txt" title="Profession">Frontend Developer</p>
+                <svg class="icon_github" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_github_path-1" d="M12,0C5.4,0,0,5.5,0,12.3c0,5.4,3.4,10,8.2,11.7C8.8,24.1,9,23.7,9,23.4c0-0.3,0-1.1,0-2.1
+                    c-3.3,0.7-4-1.7-4-1.7c-0.5-1.4-1.3-1.8-1.3-1.8c-1.1-0.8,0.1-0.8,0.1-0.8c1.2,0.1,1.8,1.3,1.8,1.3c1.1,1.9,2.8,1.3,3.5,1
+                    c0.1-0.8,0.4-1.3,0.8-1.6c-2.7-0.3-5.5-1.4-5.5-6.1c0-1.3,0.5-2.4,1.2-3.3C5.4,8,5,6.8,5.7,5.1c0,0,1-0.3,3.3,1.3c1-0.3,2-0.4,3-0.4
+                    c1,0,2,0.1,3,0.4c2.3-1.6,3.3-1.3,3.3-1.3c0.7,1.7,0.2,2.9,0.1,3.3c0.8,0.9,1.2,2,1.2,3.3c0,4.7-2.8,5.8-5.5,6.1
+                    c0.4,0.4,0.8,1.1,0.8,2.3c0,1.6,0,3,0,3.4c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.2-6.2,8.2-11.7C24,5.5,18.6,0,12,0z"/>
+                </svg>
+                <a class="mail_txt" title="Mail" href="mailto:august49822031@gmail.com?subject = Feedback&body = Message">august49822031@gmail.com</a>
+                <svg class="icon_cakeresume" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_cakeresume_path-1" d="M20,22H4c-1.1,0-2-0.9-2-2V4c0-1.1,0.9-2,2-2h16c1.1,0,2,0.9,2,2v16C22,21.1,21.1,22,20,22z"/>
+                  <path class="icon_cakeresume_path-2" d="M15.2,13.7l2.6,0.8c-0.4,1.4-1.1,2.5-2,3.2c-0.9,0.7-2.1,1-3.5,1c-1.8,0-3.2-0.6-4.3-1.8
+                    c-1.1-1.2-1.7-2.8-1.7-4.8c0-2.2,0.6-3.8,1.7-5s2.6-1.8,4.5-1.8c1.6,0,2.9,0.5,3.9,1.4C17,7.2,17.4,8,17.7,9.1l-2.6,0.6
+                    c-0.2-0.7-0.5-1.2-1-1.6c-0.5-0.4-1.1-0.6-1.8-0.6c-1,0-1.8,0.3-2.4,1C9.3,9.3,9,10.4,9,11.9c0,1.6,0.3,2.8,0.9,3.5
+                    c0.6,0.7,1.4,1,2.3,1c0.7,0,1.3-0.2,1.8-0.7S14.9,14.7,15.2,13.7z"/>
+                </svg>
+                <a class="github_txt" title="GitHub" href="https://jiangjie-yi.github.io/Resume" target="_blank">https://jiangjie-yi.github.io/Resume</a>
+                <svg class="icon_mail" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_mail_path-1" d="M23.5,7.7l-2.7,1.5L18,11.8v8.9h3.8c0.9,0,1.6-0.7,1.6-1.6V7.7z"/>
+                  <path class="icon_mail_path-2" d="M0.5,7.7l2,0.9L6,11.8v8.9H2.1c-0.9,0-1.6-0.7-1.6-1.6V7.7z"/>
+                  <polygon class="icon_mail_polygon-1" points="18,5 12,9.5 6,5 5.4,8.2 6,11.8 12,16.4 18,11.8 18.6,8.2"/>
+                  <path class="icon_mail_path-3" d="M0.5,5.6v2.1L6,11.8V5L4.3,3.7C3.9,3.4,3.4,3.2,2.8,3.2l0,0C1.5,3.2,0.5,4.3,0.5,5.6z"/>
+                  <path class="icon_mail_path-4" d="M23.5,5.6v2.1L18,11.8V5l1.7-1.3c0.4-0.3,0.9-0.5,1.4-0.5l0,0C22.5,3.2,23.5,4.3,23.5,5.6z"/>
+                </svg>
+                <a class="cakeresume_txt" title="Cakeresume" href="https://www.cakeresume.com/s--IhD7_0bk10LB30KHBq2LpA--/jie-yi-jiang" target="_blank">CakeResume 履歷</a>
+                <svg class="icon_linkedin" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <rect class="icon_linkedin_path-1" x="2.5" y="2.7" width="19" height="19"/>
+                  <path class="icon_linkedin_path-2" d="M22.3,0H1.8C0.8,0,0,0.8,0,1.7v20.6C0,23.2,0.8,24,1.8,24h20.4c1,0,1.8-0.8,1.8-1.7V1.7C24,0.8,23.2,0,22.3,0z
+                    M7.3,20.1H3.7V9.3h3.6V20.1z M5.5,7.8L5.5,7.8c-1.2,0-2-0.8-2-1.9S4.3,4,5.5,4s2,0.8,2,1.9C7.5,6.9,6.8,7.8,5.5,7.8z M20.4,20.1
+                    L20.4,20.1h-3.6v-5.8c0-1.5-0.5-2.5-1.8-2.5c-1,0-1.6,0.7-1.8,1.3c-0.1,0.2-0.1,0.6-0.1,0.9v6.1H9.3c0,0,0-9.8,0-10.8H13v1.5
+                    C13.5,10,14.3,9,16.2,9c2.4,0,4.1,1.5,4.1,4.9v6.2H20.4z"/>
+                </svg>
+                <a class="linkedin_txt" title="Linkedin" href="https://www.linkedin.com/in/jie-yi-jiang-9469aa148/" target="_blank">Linkedin 履歷</a>
+                <svg class="icon_labor_bank" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                  <path class="icon_labor_bank_path-1" d="M12,24L12,24C5.4,24,0,18.6,0,12v0C0,5.4,5.4,0,12,0h0c6.6,0,12,5.4,12,12v0C24,18.6,18.6,24,12,24z"/>
+                  <path class="icon_labor_bank_path-2" d="M21.4,13.3V6.6l-6.1,6.3c0-0.3,0.1-0.6,0.1-0.8c0-0.7-0.1-1.4-0.4-2.1c-0.3-0.7-0.7-1.3-1.2-1.8
+                    c-0.5-0.5-1.1-0.9-1.8-1.2c-0.7-0.3-1.4-0.4-2.1-0.4S8.5,6.7,7.8,6.9S6.5,7.6,6,8.1C5.5,8.6,5.1,9.2,4.9,9.8V6.6H3.3L1.8,7.3v0.9
+                    h1.5l0,9.3h1.6v-3.3c0.3,0.6,0.7,1.2,1.1,1.7c0.5,0.5,1.1,0.9,1.8,1.2c0.7,0.3,1.4,0.4,2.1,0.4s1.4-0.1,2.1-0.4
+                    c0.7-0.3,1.3-0.7,1.8-1.2c0.4-0.4,0.7-0.8,0.9-1.3h5.2v2.9h1.5v-2.9h1.7v-1.3H21.4z M9.9,16.1c-1.1,0-2.1-0.4-2.9-1.2
+                    c-0.8-0.8-1.2-1.8-1.2-2.9c0-1.1,0.4-2.1,1.2-2.9c0.8-0.8,1.8-1.2,2.9-1.2s2.1,0.4,2.9,1.2C13.6,9.9,14,10.9,14,12
+                    c0,1.1-0.4,2.1-1.2,2.9C12,15.7,11,16.1,9.9,16.1z M19.9,13.3h-3.3l3.3-3.4V13.3z"/>
+                </svg>
+                <a class="labor_bank_txt" title="104" href="https://pda.104.com.tw/profile/preview?vno=75e7fb5ap" target="_blank">104 履歷</a>
+              </div>
+            </div>
+            <div class="autobiography">
+              <div class="autobiography_text_title">
+                <svg class="icon_dialogue" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve">
+                  <path class="icon_dialogue_path-1" d="M11.8,22.2h9c3,0,5.4,2.4,5.4,5.4v2.2c0,3-2.4,5.4-5.4,5.4h-5.3l-3.6,3.6c-0.7,0.7-1.3,0.4-1.3-0.5v-3.2 c-2.4-0.5-4.2-2.7-4.2-5.3v-2.2C6.4,24.6,8.8,22.2,11.8,22.2z"/>
+                  <g class="icon_dialogue_path_wrap">
+                    <path class="icon_dialogue_path-2" d="M33.5,8.8H21.9c-4.5,0-8.1,3.6-8.1,8.1v3.4c0,4.5,3.6,8.1,8.1,8.1h6l5.4,5.4c1,1,1.9,0.7,1.9-0.8v-4.8 c3.6-0.8,6.4-4,6.4-7.9v-3.4C41.6,12.4,37.9,8.8,33.5,8.8z"/>
+                    <path class="icon_dialogue_path-3" d="M18.2,18.7c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2C19.1,16.7,18.2,17.6,18.2,18.7z"/>
+                    <path class="icon_dialogue_path-3" d="M25.3,18.7c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2C26.2,16.7,25.3,17.6,25.3,18.7z"/>
+                    <path class="icon_dialogue_path-3" d="M32.4,18.7c0,1.1,0.9,2,2,2c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2C33.3,16.7,32.4,17.6,32.4,18.7z"/>
+                  </g>
+                </svg>
+                <p class="autobiography_title">自傳</p>
+              </div>
+              <p class="autobiography_text-1 autoText">Hi，您好！我叫杰翊<span class="symbol">（</span>JE<span class="symbol">）</span></p>
+              <p class="autobiography_text-2 autoText">現職資安公司擔任前端工程師，主要執行產品前端開發，執行部門內部美術各種出圖及 Web／Android 前端Layout，也擅長前端動畫生成，對3D略懂。在台中工作經驗積累8年9個月，系統開發前端6年8個月、遊戲製作2D美術1年2個月、機台包裝平面設計11個月；工作性格較沉穩內斂，想法上較新穎且願意配合上司想法，對學習懷抱熱誠，喜好嘗試新事物，做事範疇較有彈性、涵蓋廣泛，想挑戰做出較有市場價值及前瞻性的產品。</p>
+            </div>
+          </div>
+        </div>
+        <div class="page-2">
+          <div class="circle_bg"></div>
+          <div class="line_stroke_center"></div>
+          <div class="line_stroke_left_A">
+            <div class="line_stroke_left_A-1"></div>
+            <div class="line_stroke_left_A-2"></div>
+          </div>
+          <div class="line_stroke_left_B">
+            <div class="line_stroke_left_B-1"></div>
+            <div class="line_stroke_left_B-2"></div>
+          </div>
+          <div class="line_stroke_right_A">
+            <div class="line_stroke_right_A-1"></div>
+            <div class="line_stroke_right_A-2"></div>
+          </div>
+          <div class="line_stroke_right_B">
+            <div class="line_stroke_right_B-1"></div>
+            <div class="line_stroke_right_B-2"></div>
+          </div>
+          <div class="front-end_wrap">
+            <div class="expertiseCtCodeTitleWrap">
+              <svg class="icon_codeing" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <path d="M8,16L8,16c0.3-0.4,0.3-1.1-0.2-1.4L4.6,12l3.2-2.6C8.3,9.1,8.3,8.4,8,8l0,0C7.7,7.6,7,7.5,6.6,7.8l-4.2,3.4
+                         c-0.4,0.3-0.5,1-0.2,1.4c0,0.1,0.1,0.1,0.2,0.2l4.2,3.4C7,16.5,7.7,16.4,8,16z M16,8L16,8c-0.3,0.4-0.3,1.1,0.2,1.4l3.2,2.6
+                         l-3.2,2.6c-0.4,0.3-0.5,1-0.2,1.4v0c0.3,0.4,1,0.5,1.4,0.2l4.2-3.4c0.4-0.3,0.5-1,0.2-1.4c0-0.1-0.1-0.1-0.2-0.2l-4.2-3.4
+                         C17,7.5,16.3,7.6,16,8z M14.8,4.2l-3.6,16c-0.1,0.5-0.7,0.9-1.2,0.8l0,0c-0.5-0.1-0.9-0.7-0.8-1.2l3.6-16C12.9,3.2,13.5,2.9,14,3
+                         l0,0C14.5,3.1,14.9,3.7,14.8,4.2z"/>
+              </svg>
+              <p class="expertiseCtCodeTitle">Front-End Engineering</p>
+            </div>
+            <div class="front-end_graph_di graphWrap">
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="HTML">
+                  <div class="iconMask"></div>
+                  <div class="icon_html_wrap ciAni">
+                    <svg class="icon_html" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                      <g>
+                        <polygon class="icon_html_polygon" points="16.6,5.6 18.4,5.6 18.4,2 20,2 20,0.3 15.1,0.3 15.1,2 16.6,2"/>
+                        <polygon class="icon_html_polygon" points="22.5,3 23.7,4.9 23.8,4.9 25,3 25,5.6 26.8,5.6 26.8,0.3 24.9,0.3 23.8,2.1 22.6,0.3 20.8,0.3 20.8,5.6 22.5,5.6"/>
+                        <polygon class="icon_html_polygon" points="31.9,5.6 31.9,3.8 29.4,3.8 29.4,0.3 27.6,0.3 27.6,5.6"/>
+                        <path class="icon_html_path" d="M6.5,7.9l2.5,28.6l11.4,3.2L32,36.5l2.5-28.6H6.5z M29.5,17.2h-8.9h-5.2l0.3,3.8h4.9h8.6l-1,11.3l-7.6,2.1l0,0L13,32.3 l-0.5-5.9h3.7l0.3,3.1l4.1,1.1h0l4.1-1.1l0.4-4.8h-4.5h-8.2l-1-11.2h9.2h9.2L29.5,17.2z"/>
+                        <polygon class="icon_html_polygon" points="10.9,3.8 12.5,3.8 12.5,5.6 14.3,5.6 14.3,0.3 12.5,0.3 12.5,2 10.9,2 10.9,0.3 9.1,0.3 9.1,5.6 10.9,5.6"/>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="icon_html_box"></div>
+                </div>
+                <p>HTML</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="CSS">
+                  <div class="iconMask"></div>
+                  <svg class="icon_css ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <path d="M35,6.4l-4.5,22.6l-13.6,4.5L5,29.1L6.2,23h5l-0.5,2.5l7.2,2.7l8.3-2.7l1.1-5.8H6.8l1-5h20.5l0.6-3.2H8.5l1-5 C9.5,6.4,35,6.4,35,6.4z"/>
+                  </svg>
+                  <div class="icon_css_box"></div>
+                </div>
+                <p>CSS</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="JQuery">
+                  <div class="iconMask"></div>
+                  <svg class="icon_jquery ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <path d="M7.8,12.8c-2.5,3.6-2.2,8.2-0.3,12c0,0.1,0.1,0.2,0.1,0.3c0,0.1,0.1,0.1,0.1,0.2c0,0,0,0.1,0.1,0.1c0,0.1,0.1,0.1,0.1,0.2
+                            l0.2,0.3c0,0.1,0.1,0.1,0.1,0.2c0.1,0.1,0.1,0.2,0.2,0.3c0,0,0.1,0.1,0.1,0.1c0.1,0.2,0.2,0.4,0.4,0.5c0.1,0.1,0.2,0.2,0.3,0.4
+                            c0,0,0.1,0.1,0.1,0.1l0.3,0.3c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.2,0.3,0.4,0.4c0,0,0,0,0,0c0.1,0.2,0.3,0.4,0.5,0.5
+                            c0.1,0.1,0.2,0.2,0.3,0.3l0.1,0.1c0.1,0.1,0.3,0.2,0.4,0.4c0,0,0,0,0,0l0.1,0.1c0.1,0.1,0.2,0.2,0.4,0.3l0.1,0.1
+                            c0.1,0.1,0.2,0.2,0.3,0.2l0.2,0.1c0.1,0.1,0.2,0.2,0.3,0.2c0,0,0.1,0.1,0.1,0.1l0,0l0.3,0.2l0.1,0.1c0.2,0.1,0.3,0.2,0.5,0.3
+                            c0,0,0.1,0.1,0.1,0.1c0.1,0.1,0.3,0.1,0.4,0.2c0.1,0,0.1,0.1,0.2,0.1c0.1,0,0.2,0.1,0.3,0.1c0,0,0,0,0.1,0c0,0,0.1,0,0.1,0.1
+                            c0.1,0.1,0.3,0.1,0.4,0.2c0,0,0.1,0,0.1,0c0.2,0.1,0.3,0.1,0.5,0.2c0,0,0.1,0,0.1,0c0.2,0.1,0.3,0.1,0.5,0.2l0.1,0
+                            c0.2,0.1,0.4,0.1,0.5,0.2c0,0,0.1,0,0.1,0c0.2,0.1,0.4,0.1,0.6,0.2c12,2.2,15.5-7.2,15.5-7.2c-2.9,3.8-8.1,4.8-13,3.7
+                            c-0.2,0-0.4-0.1-0.5-0.2c-0.2-0.1-0.4-0.1-0.7-0.2l-0.1,0c-0.2-0.1-0.3-0.1-0.5-0.2c0,0-0.1,0-0.1,0c-0.2-0.1-0.3-0.1-0.5-0.2
+                            c0,0-0.1,0-0.1,0c-0.1-0.1-0.3-0.1-0.4-0.2c0,0-0.1,0-0.1-0.1c-0.1-0.1-0.2-0.1-0.3-0.2c-0.1,0-0.1-0.1-0.2-0.1
+                            c-0.1-0.1-0.3-0.1-0.4-0.2c0,0-0.1-0.1-0.1-0.1c-0.2-0.1-0.3-0.2-0.5-0.3c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.2-0.2-0.4-0.2
+                            c0,0-0.1-0.1-0.1-0.1c-0.1-0.1-0.2-0.2-0.3-0.2c0,0-0.1-0.1-0.2-0.1c-0.1-0.1-0.2-0.2-0.3-0.2l-0.1-0.1c-0.1-0.1-0.3-0.2-0.4-0.3
+                            c0,0,0,0,0,0l-0.4-0.4l-0.1-0.1c-0.1-0.1-0.2-0.2-0.3-0.3l-0.1-0.1c-0.1-0.1-0.2-0.2-0.4-0.4l0,0c-0.1-0.1-0.2-0.3-0.4-0.4
+                            c0,0-0.1-0.1-0.1-0.1L11.6,24c-0.1-0.2-0.3-0.3-0.4-0.5c-2.7-3.7-3.7-8.9-1.5-13.1 M15.5,9.8c-1.8,2.6-1.7,6-0.3,8.8
+                            c0.2,0.5,0.5,0.9,0.8,1.3c0.3,0.4,0.6,0.8,0.9,1.2c0.1,0.1,0.3,0.3,0.4,0.4l0.1,0.1c0.1,0.1,0.3,0.3,0.4,0.4l0,0
+                            c0.2,0.1,0.3,0.3,0.5,0.4c0,0,0.1,0.1,0.1,0.1c0.2,0.1,0.3,0.2,0.5,0.4l0,0c0.1,0.1,0.1,0.1,0.2,0.2c0,0,0.1,0,0.1,0.1
+                            c0.1,0.1,0.2,0.2,0.4,0.2c0,0,0,0,0.1,0c0.1,0.1,0.2,0.1,0.3,0.2c0,0,0.1,0,0.1,0.1c0.1,0,0.2,0.1,0.2,0.1l0,0
+                            c0.2,0.1,0.3,0.1,0.5,0.2c0,0,0.1,0,0.1,0c0.1,0.1,0.3,0.1,0.4,0.2c0.1,0,0.1,0,0.2,0.1c0.1,0,0.2,0.1,0.4,0.1l0.2,0.1
+                            c0.2,0.1,0.3,0.1,0.5,0.2c9.3,1.5,11.4-5.6,11.4-5.6c-1.9,2.8-5.7,4.1-9.6,3.1c-0.2,0-0.4-0.1-0.5-0.2c-0.1,0-0.1,0-0.2,0
+                            c-0.1,0-0.2-0.1-0.4-0.1l-0.2-0.1c-0.1-0.1-0.3-0.1-0.4-0.2c0,0-0.1,0-0.1,0c-0.2-0.1-0.3-0.1-0.5-0.2l-0.2-0.1L21.8,21
+                            c-0.1-0.1-0.2-0.1-0.3-0.2c0,0,0,0-0.1,0c-0.1-0.1-0.3-0.2-0.4-0.2c0,0-0.1,0-0.1-0.1l-0.2-0.2c-0.2-0.1-0.3-0.2-0.5-0.4
+                            c0,0-0.1-0.1-0.1-0.1c-1.7-1.4-3.1-3.3-3.8-5.4c-0.7-2.2-0.5-4.7,0.7-6.7 M21.9,7.6c-1.1,1.6-1.2,3.5-0.4,5.2
+                            c0.8,1.8,2.4,3.3,4.2,3.9c0.1,0,0.1,0.1,0.2,0.1l0.1,0c0.1,0,0.2,0.1,0.3,0.1c5.1,1,6.5-2.6,6.9-3.2C32,15.5,30,16,27.5,15.3
+                            c-0.2-0.1-0.4-0.1-0.6-0.2c-0.2-0.1-0.5-0.2-0.7-0.3c-0.4-0.2-0.9-0.5-1.3-0.8c-2.2-1.7-3.6-4.9-2.2-7.6"/>
+                  </svg>
+                  <div class="icon_jquery_box"></div>
+                </div>
+                <p>jQuery</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Figma">
+                  <div class="iconMask"></div>
+                  <svg class="icon_figma ciAni" style="enable-background:new 0 0 3000 3000;" version="1.1" viewBox="0 0 3000 3000" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path class="icon_figma_path-1" d="M1083.333374,2750c230,0,416.666626-186.666748,416.666626-416.666748v-416.666626h-416.666626 c-230.000061,0-416.666687,186.666626-416.666687,416.666626S853.333313,2750,1083.333374,2750z"/>
+                    <path class="icon_figma_path-2" d="M666.666687,1500c0-230,186.666626-416.666748,416.666687-416.666748H1500v833.333374 h-416.666626C853.333313,1916.666626,666.666687,1730,666.666687,1500z"/>
+                    <path class="icon_figma_path-3" d="M666.666687,666.666626C666.666687,436.666656,853.333313,250,1083.333374,250H1500 v833.333252h-416.666626C853.333313,1083.333252,666.666687,896.666626,666.666687,666.666626z" id="path1_fill_1_"/>
+                    <path class="icon_figma_path-4" d="M1500,250h416.666626c230.000122,0,416.666626,186.666656,416.666626,416.666626 s-186.666504,416.666626-416.666626,416.666626H1500V250z"/>
+                    <path class="icon_figma_path-5" d="M2333.333252,1500c0,230-186.666504,416.666626-416.666626,416.666626S1500,1730,1500,1500 s186.666626-416.666748,416.666626-416.666748S2333.333252,1270,2333.333252,1500z"/>
+                  </svg>
+                  <div class="icon_figma_box"></div>
+                </div>
+                <p>Figma</p>
+              </div>
+            </div>
+          </div>
+          <div class="android_wrap">
+            <div class="expertiseCtCodeTitleWrap">
+              <svg class="icon_phone" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <path d="M16.1,1.3H7.9c-1.7,0-3.1,1.4-3.1,3.1v15.3c0,1.7,1.4,3.1,3.1,3.1h8.1c1.7,0,3.1-1.4,3.1-3.1V4.4 C19.1,2.7,17.8,1.3,16.1,1.3z M13,20.7h-2c-0.3,0-0.5-0.2-0.5-0.5v0c0-0.3,0.2-0.5,0.5-0.5h2c0.3,0,0.5,0.2,0.5,0.5v0 C13.5,20.4,13.3,20.7,13,20.7z M16.8,17.6H7.2c-0.3,0-0.5-0.2-0.5-0.5V4.9c0-0.3,0.2-0.5,0.5-0.5h9.7c0.3,0,0.5,0.2,0.5,0.5v12.2 C17.3,17.4,17.1,17.6,16.8,17.6z"/>
+              </svg>
+              <p class="expertiseCtCodeTitle">Android Develop</p>
+            </div>
+            <div class="android_graph_di graphWrap">
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Android Studio">
+                  <div class="iconMask"></div>
+                  <svg class="icon_android ciAni" enable-background="new 0 0 128 128" version="1.1" viewBox="0 0 128 128" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path clip-rule="evenodd" d="M112.368,40.466c-4.222,0-7.64,3.326-7.64,7.428 v31.797c0,4.102,3.418,7.428,7.64,7.428c4.214,0,7.632-3.326,7.632-7.428V47.894C120,43.793,116.582,40.466,112.368,40.466z M15.64,40.466c-4.222,0-7.64,3.326-7.64,7.428v31.797c0,4.102,3.418,7.428,7.64,7.428c4.214,0,7.632-3.326,7.632-7.428V47.894 C23.272,43.793,19.854,40.466,15.64,40.466z M28.917,40.466h-0.549v54.503c0,4.327,3.611,7.85,8.065,7.85h5.815 c-0.201,0.655-0.309,1.34-0.309,2.062v15.692c0,4.102,3.426,7.428,7.64,7.428c4.214,0,7.64-3.326,7.64-7.428V104.88 c0-0.722-0.116-1.407-0.309-2.062h14.182c-0.193,0.655-0.302,1.34-0.302,2.062v15.692c0,4.102,3.418,7.428,7.632,7.428 c4.222,0,7.648-3.326,7.648-7.428V104.88c0-0.722-0.116-1.407-0.317-2.062h5.823c4.454,0,8.057-3.522,8.057-7.85V40.466H28.917z M81.53,10.716l1.423-2.092l1.423-2.062l3.17-4.636c0.394-0.572,0.232-1.34-0.356-1.716c-0.58-0.384-1.376-0.226-1.755,0.346 l-4.841,7.052L79.141,9.73C74.54,7.992,69.413,7.021,64,7.021c-5.405,0-10.54,0.971-15.141,2.709l-1.446-2.122l-1.431-2.085 l-3.402-4.967c-0.394-0.572-1.183-0.722-1.771-0.346c-0.58,0.376-0.742,1.144-0.356,1.716l3.17,4.636l1.423,2.062l1.431,2.092 c-10.803,4.899-18.11,14.179-18.11,24.798h71.264C99.632,24.895,92.325,15.616,81.53,10.716z M48.728,25.602 c-2.111,0-3.82-1.663-3.82-3.718c0-2.055,1.709-3.71,3.82-3.71s3.82,1.656,3.82,3.71C52.548,23.939,50.839,25.602,48.728,25.602z M79.272,25.602c-2.111,0-3.82-1.663-3.82-3.718c0-2.055,1.709-3.71,3.82-3.71c2.111,0,3.82,1.656,3.82,3.71 C83.092,23.939,81.383,25.602,79.272,25.602z" fill-rule="evenodd"/>
+                  </svg>
+                  <div class="icon_android_box"></div>
+                </div>
+                <p>Android Studio</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Jetpack Compose">
+                  <div class="iconMask"></div>
+                  <svg class="icon_jetpack_compose ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+                    <path class="icon_jc_obj-1" d="M19.9,38.6c0.5,0,1-0.1,1.4-0.3l13.8-8c0.8-0.5,1.3-1.3,1.3-2.2V12c0-0.4-0.1-0.8-0.3-1.1L19.9,20L19.9,38.6z"/>
+                    <path class="icon_jc_obj-2" d="M3.6,12v16c0,0.9,0.5,1.8,1.3,2.2l13.8,8c0.4,0.2,0.8,0.3,1.2,0.3l0-18.6l-16.1-9C3.7,11.3,3.6,11.6,3.6,12z"/>
+                    <path class="icon_jc_obj-3" d="M19.9,20l16.3-9.1c-0.2-0.5-0.6-0.9-1-1.1l-13.8-8c-0.8-0.5-1.8-0.5-2.6,0l-13.8,8C4.4,10,4,10.5,3.8,11 L19.9,20z"/>
+                    <path class="icon_jc_obj-4" d="M30.4,25V15c0-0.6-0.3-1.2-0.8-1.5l-8.7-5c-0.5-0.3-1.2-0.3-1.7,0l-8.7,5c-0.5,0.3-0.8,0.9-0.8,1.5v10 c0,0.6,0.3,1.2,0.8,1.5l8.7,5c0.5,0.3,1.2,0.3,1.7,0l8.7-5C30.1,26.2,30.4,25.6,30.4,25z"/>
+                    <path class="icon_jc_obj-5" d="M26.9,23v-6c0-0.6-0.3-1.2-0.8-1.5l-5.2-3c-0.5-0.3-1.2-0.3-1.7,0l-5.2,3c-0.5,0.3-0.8,0.9-0.8,1.5v6 c0,0.6,0.3,1.2,0.8,1.5l5.2,3c0.5,0.3,1.2,0.3,1.7,0l5.2-3C26.6,24.2,26.9,23.6,26.9,23z"/>
+                  </svg>
+                  <div class="icon_jetpack_compose_box"></div>
+                </div>
+                <p>Jetpack Compose</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Kotlin">
+                  <div class="iconMask"></div>
+                  <svg class="icon_kotlin ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 42 42" style="enable-background:new 0 0 42 42;" xml:space="preserve">
+                    <style type="text/css">
+                      .icon_kotlin_polygon-1{fill:url(#SVGID_1);}
+                      .icon_kotlin_polygon-2{fill:url(#SVGID_2);}
+                      .icon_kotlin_polygon-3{fill:url(#SVGID_3);}
+                    </style>
+                    <linearGradient id="SVGID_1" gradientUnits="userSpaceOnUse" x1="19.9845" y1="22.0389" x2="19.9845" y2="7.1563" gradientTransform="matrix(0.7071 0.7071 -0.7071 0.7071 17.8922 9.8044)">
+                      <stop offset="0" style="stop-color:#0099DB"/>
+                      <stop offset="1" style="stop-color:#7E70CF"/>
+                    </linearGradient>
+                    <polygon style="fill:url(#SVGID_1);" points="35,35 21,21 7,34.9 "/>
+                    <linearGradient id="SVGID_2" gradientUnits="userSpaceOnUse" x1="7.2618" y1="27.5595" x2="27.0318" y2="7.7896">
+                      <stop offset="0" style="stop-color:#C957B3"/>
+                      <stop offset="1" style="stop-color:#F38814"/>
+                    </linearGradient>
+                    <polygon style="fill:url(#SVGID_2);" points="20.6,7 35,7 7,34.9 7,21 "/>
+                    <linearGradient id="SVGID_3" gradientUnits="userSpaceOnUse" x1="5.391" y1="15.5885" x2="15.1496" y2="5.8299">
+                      <stop offset="0" style="stop-color:#0099DB"/>
+                      <stop offset="1" style="stop-color:#7E70CF"/>
+                    </linearGradient>
+                    <polygon style="fill:url(#SVGID_3);" points="20.6,7 7,7 7,21 "/>
+                  </svg>
+                  <div class="icon_kotlin_box"></div>
+                </div>
+                <p>Kotlin</p>
+              </div>
+            </div>
+          </div>
+          <div class="image_wrap">
+            <div class="expertiseCtCodeTitleWrap">
+<!--               <svg class="icon_image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <path d="M3,16c0,2.8,2.2,5,5,5h8c2.7,0,4.9-2.2,5-4.9c0,0,0,0,0-0.1v-0.1V8c0-2.8-2.2-5-5-5H8C5.2,3,3,5.2,3,8V16z M16,19H8
+                         c-1.7,0-3-1.3-3-3v-0.4L9.5,13c0.9-0.5,2.1-0.5,3,0l6.4,3.6C18.7,17.9,17.5,19,16,19z M8,5h8c1.7,0,3,1.3,3,3v6.3l-5.5-3.1
+                         c-1.5-0.9-3.4-0.8-5,0l-3.5,2V8C5,6.3,6.3,5,8,5z"/>
+                <circle cx="15.5" cy="8.5" r="1.5"/>
+              </svg> -->
+              <svg class="icon_adobe" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+              <path class="icon_adobe_obj-1" d="M15,3.1c-2.7,0-5,1.2-6.7,3c-0.2,0-0.5-0.1-0.7-0.1c-4.1,0-7.4,3.3-7.4,7.4c0,4.1,3.3,7.4,7.4,7.4H15
+                c4.9,0,8.9-4,8.9-8.9S19.8,3.1,15,3.1L15,3.1z"/>
+              <path class="icon_adobe_obj-2" d="M15,4.6c-1.9,0-3.6,0.7-4.9,1.9c0.5,0.1,0.9,0.4,1.4,0.6c0,0,0,0,0.1,0l0,0c1-0.7,2.2-1.1,3.5-1.1
+                c3.3,0,5.9,2.7,5.9,5.9c0,3.3-2.6,5.9-5.9,5.9c-1.3,0-2.5-0.4-3.5-1.2c-0.4-0.3-0.8-0.6-1-1c0,0,0,0-0.1-0.1L8.1,13
+                c-0.3-0.3-0.7-0.4-1-0.1c-0.3,0.3-0.4,0.7-0.1,1l2.2,2.7c0,0,0,0,0,0c0.4,0.4,0.8,0.8,1.3,1.2c1.3,1,2.8,1.5,4.4,1.5
+                c4.1,0,7.4-3.3,7.4-7.4C22.3,7.9,19,4.6,15,4.6L15,4.6z"/>
+              <path class="icon_adobe_obj-3" d="M8.3,17.9c-0.2,0-0.5,0.1-0.7,0.1c-2.4,0-4.4-2-4.4-4.4c0-2.9,2.8-5.3,5.9-4.2c0.3,0.1,0.5,0.2,0.9,0.4
+                c0,0,0,0,0,0l4.6,2.9c0.3,0.2,0.8,0.1,1-0.2c0.2-0.3,0.1-0.8-0.2-1l-4.6-2.9c0,0,0,0,0,0C10.3,8.2,9.8,8,9.5,7.9
+                C8.9,7.7,8.2,7.6,7.6,7.6c-3.3,0-5.9,2.7-5.9,5.9c0,3.3,2.6,5.9,5.9,5.9c0.7,0,1.4-0.1,2-0.4C9.1,18.7,8.7,18.3,8.3,17.9L8.3,17.9z"/>
+              </svg>
+              <p class="expertiseCtCodeTitle">Adobe</p>
+            </div>
+            <div class="image_graph_di graphWrap">
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Illustrator">
+                  <div class="iconMask"></div>
+                  <p class="txt_illustrator ciAni">Ai</p>
+                  <div class="icon_illustrator_box"></div>
+                </div>
+                <p>Illustrator</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Photoshop">
+                  <div class="iconMask"></div>
+                  <p class="txt_photoshop ciAni">Ps</p>
+                  <div class="icon_photoshop_box"></div>
+                </div>
+                <p>Photoshop</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="After Effect">
+                  <div class="iconMask"></div>
+                  <p class="txt_affter_effect ciAni">Ae</p>
+                  <div class="icon_affter_effect_box"></div>
+                </div>
+                <p>After Effect</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Premiere Pro">
+                  <div class="iconMask"></div>
+                  <p class="txt_premiere ciAni">Pr</p>
+                  <div class="icon_premiere_box"></div>
+                </div>
+                <p>Premiere Pro</p>
+              </div>
+            </div>
+          </div>
+          <div class="threeD_wrap">
+            <div class="expertiseCtCodeTitleWrap">
+              <svg class="icon_threeD" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                <path d="M16.1,9.8L9.4,6.1C9.1,6,8.9,6,8.6,6.1L1.9,9.8c-0.2,0.1-0.4,0.4-0.4,0.7V18c0,0.3,0.2,0.5,0.4,0.7l6.7,3.7
+                         c0.1,0.1,0.2,0.1,0.4,0.1c0.1,0,0.3,0,0.4-0.1l6.7-3.7c0.2-0.1,0.4-0.4,0.4-0.6v-7.5C16.5,10.2,16.4,10,16.1,9.8z M8.3,20.5L3,17.6
+                         v-5.8l5.2,2.9V20.5z M9,13.4l-5.2-2.9L9,7.6l5.2,2.9L9,13.4z M15,17.6l-5.2,2.9v-5.8l5.2-2.9V17.6z"/>
+                <polygon points="22.5,4.5 19.5,4.5 19.5,1.5 18,1.5 18,4.5 15,4.5 15,6 18,6 18,9 19.5,9 19.5,6 22.5,6 "/>
+              </svg>
+              <p class="expertiseCtCodeTitle">3D</p>
+            </div>
+            <div class="graphWrap">
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Maya">
+                  <div class="iconMask"></div>
+                  <svg class="icon_maya ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <path class="icon_maya_path-1" d="M21.3,20.1h-16c-0.6,0-1-0.4-1-1V6.2h17V20.1z"/>
+                    <path class="icon_maya_path-2" d="M19.9,16.9H5.7V3.2h13.2c0.6,0,1,0.4,1,1V16.9z"/>
+                    <polygon class="icon_maya_polygon-1" points="5.7,3.2 2.7,5 2.7,18.8 5.7,16.9 "/>
+                    <polygon class="icon_maya_polygon-2" points="14.4,6.2 12.8,12.2 11.2,6.2 8.9,6.2 8.9,14 10.5,14 10.5,8.9 12,14 13.6,14 15.1,8.9 15.1,14 16.7,14  16.7,6.2 "/>
+                  </svg>
+                  <div class="icon_maya_box"></div>
+                </div>
+                <p>Maya</p>
+              </div>
+              <div class="circleFrameWrap">
+                <div class="circleFrame" title="Blender">
+                  <div class="iconMask"></div>
+                  <svg class="icon_blender ciAni" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+                    <ellipse class="icon_blender_ellipse" cx="15.6" cy="13.5" rx="5.9" ry="5.2"/>
+                    <path class="icon_blender_path-1" d="M7.3,14.8c0,0.3,0.1,0.9,0.3,1.4c0.3,1,0.9,2,1.6,2.8c0.8,0.9,1.7,1.5,2.8,2 c1.2,0.5,2.4,0.8,3.7,0.8c1.3,0,2.5-0.3,3.7-0.8c1.1-0.5,2-1.2,2.8-2c0.7-0.8,1.3-1.7,1.6-2.8c0.3-1,0.4-2,0.3-3.1 c-0.1-1-0.5-1.9-1-2.8c-0.5-0.8-1.1-1.5-1.9-2h0l-7.5-5.8l0,0c-0.5-0.4-1.3-0.4-1.9,0c-0.5,0.4-0.6,1-0.1,1.4l0,0l3.1,2.5l-9.5,0h0 C4.4,6.5,3.6,7,3.4,7.7C3.3,8.3,3.8,8.9,4.6,8.9v0l4.8,0l-8.6,6.6l0,0c-0.8,0.6-1.1,1.7-0.6,2.3c0.5,0.7,1.6,0.7,2.4,0L7.4,14 C7.4,14,7.3,14.5,7.3,14.8L7.3,14.8z M19.4,16.6c-1,1-2.3,1.5-3.8,1.5c-1.5,0-2.8-0.6-3.8-1.5c-0.5-0.5-0.8-1-1-1.6 c-0.4-1.2-0.3-2.4,0.3-3.5c0.3-0.5,0.7-1,1.2-1.4c0.9-0.8,2.1-1.2,3.4-1.2c1.3,0,2.5,0.4,3.4,1.2c0.5,0.4,0.9,0.9,1.2,1.4 c0.3,0.5,0.5,1.1,0.5,1.7c0.1,0.6,0,1.2-0.2,1.8C20.3,15.6,19.9,16.1,19.4,16.6"/>
+                    <path class="icon_blender_path-2" d="M12.4,13.4c0-0.8,0.4-1.5,1-2c0.6-0.5,1.4-0.8,2.2-0.8c0.8,0,1.6,0.3,2.2,0.8c0.6,0.5,1,1.2,1,2 c0,0.8-0.3,1.6-0.9,2.2c-0.6,0.6-1.5,0.9-2.4,0.9c-0.9,0-1.7-0.3-2.4-0.9C12.7,14.9,12.4,14.2,12.4,13.4"/>
+                  </svg>
+                  <div class="icon_blender_box"></div>
+                </div>
+                <p>Blender</p>
+              </div>
+            </div>
+          </div>
+          <P></P>
+
+          SVG Animation
+          Lottie Animation
+
+          <div class="skill_software"></div>
+        </div>
+        <div class="page-3">
+          <div class="creation_box creation-1">
+            <div class="creation_img"></div>
+            <p class="creation_title-1">Jazz Bar - Shop Sign</p>
+          </div>
+          <div class="creation_box creation-2">
+            <div class="creation_img"></div>
+            <p class="creation_title-2">404 - Effect</p>
+          </div>
+          <div class="creation_box creation-3">
+            <div class="creation_img"></div>
+            <p class="creation_title-3">Neon Lights x Lightning</p>
+          </div>
+          <div class="creation_box creation-4">
+            <div class="creation_img"></div>
+            <p class="creation_title-4">Gold Coin</p>
+          </div>
+          <div class="creation_box creation-5">
+            <div class="creation_img"></div>
+            <p class="creation_title-5">Apple Keyboard</p>
+          </div>
+        </div>
+        <div class="darwable_bottom"></div>
+        <div class="darwable_center">
+          <div class="cross_bg">
+            <div class="cross_bg_ct"></div>
+          </div>
+        </div>
+      </div>
+      <div class="logo_name_box">
+        <div class="spacing-1"></div>
+        <div class="spacing-4"></div>
+        <div class="name_logo_wrap">
+          <p class="name_logo" data-glitch="JE">JE</p>
+        </div>
+      </div>
+      <div id="bg_ef">
+        <span></span>
+      </div>
+    </div>
+    <div class="bg_mountain"></div>
+  </body>
+
+  <script>
+    $(".autobiography_button").click(function(){
+      $(".autobiography_button").addClass("focusMenuButton");
+      $(".expertise_button").removeClass("focusMenuButton");
+      $(".creation_button").removeClass("focusMenuButton");
+      $(".life_button").removeClass("focusMenuButton");
+
+      $("#triangleA").css("grid-column","1 / 2");
+      $(".page-1").css("display","grid");
+      $(".page-1").addClass("");
+      $(".video_wrap-1").css("display","flex");
+      $(".page-2").css("display","none");
+      $(".page-2").addClass("");
+      $(".video_wrap-2").css("display","none");
+      $(".page-3").css("display","none");
+      $(".page-3").addClass("");
+      $(".video_wrap-3").css("display","none");
+      console.log(1);
+      setTimeout(function(){
+          $(".page-1").removeClass("");
+          $(".page-2").removeClass("");
+          $(".page-3").removeClass("");
+        }, 625);
+    });
+    $(".expertise_button").click(function(){
+      $(".autobiography_button").removeClass("focusMenuButton");
+      $(".expertise_button").addClass("focusMenuButton");
+      $(".creation_button").removeClass("focusMenuButton");
+      $(".life_button").removeClass("focusMenuButton");
+
+      $("#triangleA").css("grid-column","2 / 3");
+      $(".page-1").css("display","none");
+      $(".video_wrap-1").css("display","none");
+      $(".page-2").css("display","grid");
+      $(".video_wrap-2").css("display","flex");
+      $(".page-3").css("display","none");
+      $(".video_wrap-3").css("display","none");
+      console.log(2);
+      setTimeout(function(){
+
+      }, 625);
+    });
+    $(".creation_button").click(function(){
+      $(".autobiography_button").removeClass("focusMenuButton");
+      $(".expertise_button").removeClass("focusMenuButton");
+      $(".creation_button").addClass("focusMenuButton");
+      $(".life_button").removeClass("focusMenuButton");
+
+      $("#triangleA").css("grid-column","3 / 4");
+      $(".page-1").css("display","none");
+      $(".video_wrap-1").css("display","none");
+      $(".page-2").css("display","none");
+      $(".video_wrap-2").css("display","none");
+      $(".page-3").css("display","grid");
+      $(".video_wrap-3").css("display","flex");
+      console.log(3);
+      setTimeout(function(){
+      }, 625);
+    });
+
+    setTimeout(function(){
+        console.log("run");
+        $(".icon_pos_at_present").removeClass("com-1");
+        $(".icon_pos_at_present").css("animation","icon_pos_at_present_loop_ani 4.5s cubic-bezier(0.55, -0.2, 0.5, 1) infinite");
+    }, 1500);
+
+    //銝駁����脣�����
+    function toggleTheme() {
+        if (document.body.classList.contains("dark")){
+            document.body.classList.remove("dark");
+        }else{
+            document.body.classList.add("dark");
+        }
+    }
+
+    //�����舐�寞��
+    var TaskStatusInterval = "";
+    const colors = ['', '']
+
+    function task_status(){
+      TaskStatusInterval = setInterval(function(){
+        createSquare();
+      },135);
+    }
+    function createSquare(){
+      const container = document.getElementById('bg_ef');
+      const particle = document.createElement('span');
+
+      var size = Math.random() * 10;
+      particle.style.width = 5 + size + 'px';
+      particle.style.height = 5 + size + 'px';
+      particle.style.top = Math.random() * innerHeight + 'px';
+      particle.style.left = Math.random() * innerWidth + 'px';
+      const bg = colors[Math.floor(Math.random() * colors.length)];
+      particle.style.background = bg;
+
+      container.appendChild(particle);
+
+      setTimeout(() => {
+        particle.remove()
+      }, 10000);
+    }
+    task_status();
+  </script>
+</html>
